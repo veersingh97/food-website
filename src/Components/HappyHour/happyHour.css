@@ -1,0 +1,42 @@
+
+.happy-hour--section{
+    padding: 5rem;
+    color: white;
+    position: relative;
+}
+.happy-hour--section::before{
+    content: "";
+    background-image: url('../../Assests/back.jpg');
+    background-size: cover;
+    filter: brightness(0.5); 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -10;
+}
+.happy-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.happy-content h2{
+    font-size: 2rem;
+    margin: 3rem 0rem;
+}
+.happy-content h1{
+    font-size: 5rem;
+    color: #DB9423;
+    font-family: 'Abril Fatface', cursive;
+}
+.happy-content h4{
+    font-size: 2rem;
+}
+.happy-btn{
+    font-size: 2rem;
+    padding: 2rem 4rem;
+    margin: 2rem 0rem;
+    font-weight: 700;
+}

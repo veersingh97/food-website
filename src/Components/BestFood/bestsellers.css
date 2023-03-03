@@ -1,0 +1,81 @@
+.best-section--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.best-section{
+    padding: 5rem;
+
+}
+.best-section h1{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
+.best-content {
+  padding: 3rem;
+  box-shadow: 2px 2px 10px 2px rgb(215, 215, 215);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.best-content:hover{
+    transform: translateY(-10px);
+}
+.meal-img {
+  width: 100%;
+}
+.meal-name{
+    font-size: 2rem;
+}
+
+.green{
+    color: green;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.red{
+    color: red;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.price{
+    color: #DB9423;
+}
+.info{
+    font-size: 1.4rem;
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.see-all {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    margin-top: 2rem;
+    font-weight: 700;
+  }
+  .see-all span{
+    text-decoration: none;
+  }
+  .see-all:hover {
+    transform: scaleY(1.1);
+  }
+  @media(max-width:61em){
+    .best-section--grid {
+        grid-template-columns: 1fr 1fr;
+      }
+  }
+
+  @media(max-width:40em){
+    .best-section--grid {
+        grid-template-columns: 1fr;
+      }
+  }
+  

@@ -1,0 +1,62 @@
+.testi-section{
+    padding: 5rem;
+    position: relative;
+}
+.testi-section::before {    
+    content: "";
+    background-image: url('../../Assests/food-pattern-free-img.png');
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -10;
+    opacity: 0.1;
+}
+.testi-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testi-content h1{
+    font-family:  'Abril Fatface', cursive;
+    font-size: 4rem;
+}
+.testi-content p{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:3rem;
+    margin-top: 5rem;
+}
+.testimonial-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px rgb(215, 215, 215);
+}
+.name{
+    color: #DB9423;
+    font-weight: 700;
+}
+.testimonial-content h3{
+    text-align: center;
+}
+.dum-img{
+    width:8rem;
+}
+.span-text{
+    font-size: 1.4rem;
+}
+@media(max-width:40em){
+    .testimonials{
+        grid-template-columns: 1fr 1fr;
+    }
+  }

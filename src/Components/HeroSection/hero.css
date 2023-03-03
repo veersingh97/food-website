@@ -1,0 +1,66 @@
+.hero-section{
+    padding: 5rem;
+    position: relative;
+}
+.hero-img{
+    display:  none;
+}
+.videoTag {
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+    position: absolute;
+  }
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.best{
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 4rem;
+}
+.city{
+    color: #ed7a00;
+}
+.hero-content p{
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color:white;
+}
+.btn-trans{
+    background-color: transparent;
+    outline: 1px solid #ed7a00;
+    margin-left: 3rem;
+    color: #ed7a00;
+}
+.buttons{
+    margin-top: 4rem;
+}
+.btn-hero{
+    font-size: 2rem;
+
+}
+@media(max-width:61em){
+    .videoTag{
+        display:  none;
+    }
+    .hero-section::before{
+        content: "";
+        background-image: url('../../Assests/back1.avif');
+        background-size: cover;
+        filter: brightness(0.5); 
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+}

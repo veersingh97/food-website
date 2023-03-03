@@ -1,0 +1,65 @@
+.featured-section{
+    padding: 5rem;
+}
+.featured-section h3 {
+    margin: 3rem auto 2rem auto;
+    text-align: center;
+    color: #333;
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .featured-logo {
+    max-width: 12rem;
+    opacity: 0.5;
+    filter: grayscale(100%);
+  }
+  .featured-logo:hover{
+    filter: none;
+  }
+  
+  .insider {
+    width: 10rem;
+  }
+  
+  .forbes {
+    width: 10rem;
+  }
+  
+  @media (max-width: 61em) {
+    .featured-section h3 {
+      font-size: 1.2rem;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.4rem;
+    }
+    .insider {
+      width: 7rem;
+    }
+  
+    .forbes {
+      width: 7rem;
+    }
+  }
+  
+  @media(max-width:35em){
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.1rem;
+    }
+    .tech{
+      display: none;
+    }
+  }

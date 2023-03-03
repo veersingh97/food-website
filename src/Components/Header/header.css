@@ -1,0 +1,99 @@
+.header-section{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(244, 244, 244);
+    padding: 2rem 4rem;
+    font-weight: 600;
+}
+
+.logo{
+    height: 3rem;
+    text-decoration: none;
+    color: black;
+}
+.navbar-text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+.navbar-label{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-label:hover{
+   color: #ed7a00;
+}
+.btn{
+    padding: 1rem 2rem;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    background-color: #DB9423;
+    border: none;
+    font-family: inherit;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #ed7a00;
+    color: white;
+}
+svg{
+    width: 3rem;
+    height: 3rem;
+}
+.bars{
+    display: none;
+}
+@media(max-width:40em){
+    body{
+        overflow-X: hidden;
+    }
+    html{
+        font-size: 47%;
+    }
+    .header-section{
+        padding: 2rem 2rem;
+        background-color:rgb(244, 244, 244)
+    }
+    .bars{
+        display: inline-block;
+    }
+    .navbar-text {
+        visibility: hidden;
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 8%;
+        left: 0;
+        background-color: rgb(244, 244, 244);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        overflow: hidden;
+        color: black;
+        transition: all 0.3s linear;
+      }
+      .navbar-text.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0%);
+        transform-origin: right;
+        transition: all 0.3s linear;
+        z-index: 999;
+        color: rgb(255, 255, 255);
+      }
+    
+      .bars-mobile{
+        width: 3rem;
+        height: 3rem;
+      }
+}
