@@ -13,7 +13,7 @@ const Hero = () => {
       </video>
       <div className="hero-section">
         <div className="hero-content">
-          <img src={DivImg} alt="divider"></img>
+          <img src={DivImg} alt="divider" className="divider"></img>
           <h1 className="best city">Best In Karol Bagh</h1>
           <h1 className="best">Veg & Non Veg</h1>
           <p>
@@ -23,7 +23,7 @@ const Hero = () => {
             eligendi veniam!
           </p>
           <div className="buttons">
-            <Link to="/contact"><button className="btn btn-hero">Reservation</button></Link>
+            <Link to="/reserve"><button className="btn btn-hero">Reservation</button></Link>
             <Link to="/menu"><button className="btn btn-trans btn-hero">Explore More</button></Link>
           </div>
         </div>

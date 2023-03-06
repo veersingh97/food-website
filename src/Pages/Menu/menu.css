@@ -1,0 +1,108 @@
+
+.menu-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  padding: 4rem;
+}
+.menu-hero{
+    position: relative;
+}
+.menu-hero::before {
+    content: "";
+    background-image: url("../../Assests/Bar.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -10;
+  }
+.menu-hero h1 {
+  font-size: 7rem;
+  letter-spacing: 2px;
+  font-family: "Abril Fatface", cursive;
+  color: #ffffff;
+}
+
+.menu-hero p {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin: 3rem;
+  color: white;
+}
+.menu-hero h2 {
+  color: #db9423;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: "Abril Fatface", cursive;
+}
+.menu-btn {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.menu-content {
+  padding: 5rem;
+}
+.menu-type {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem;
+  color: #db9423;
+  cursor: pointer;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-family: "Abril Fatface", cursive;
+  transition: all .3s ease-in-out ;
+}
+
+.menu-type h2{
+    padding: .5rem 1rem;
+    /* color: #ed7a00; */
+}
+.active{
+    /* background-color: #ed7a00; */
+    color: #673602;
+    border-radius: 10px;
+    /* outline:solid #db9423 2px; */
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.dish-content {
+  padding: 3rem;
+  box-shadow: 2px 2px 10px 2px rgb(215, 215, 215);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.dish-content:hover{
+    transform: translateY(-10px);
+}
+@media (max-width: 61em) {
+  .menu-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 40em) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .menu-type {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:3rem;
+  }
+}

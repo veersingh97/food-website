@@ -1,0 +1,166 @@
+.contact-hero {
+  position: relative;
+}
+.contact-hero::before {
+  content: "";
+  background-image: url("../../Assests/back2.jpg");
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  filter: brightness(0.3);
+  z-index: -10;
+}
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  padding: 4rem;
+}
+.contact-content h1 {
+  font-size: 7rem;
+  letter-spacing: 2px;
+  font-family: "Abril Fatface", cursive;
+  color: #ffffff;
+}
+
+.contact-content p {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin: 5rem;
+  color: white;
+}
+.contact-content h2 {
+  color: #db9423;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: "Abril Fatface", cursive;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+.contact-btn {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.hungry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem 15rem;
+  text-align: center;
+}
+.hungry h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+.hungry P {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.call-book {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+.call-book h3 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+.call-book p {
+  font-size: 2rem;
+}
+.form-map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 3rem;
+}
+.form {
+  padding: 3rem;
+}
+.form label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+}
+.form input,
+.form textarea {
+  background-color: #dfdfdf;
+  color: white;
+  border: none;
+  padding: 1rem 1rem;
+  width: 100%;
+  border-radius: 10px;
+}
+textarea {
+  width: 300px;
+  height: 150px;
+}
+.top-margin {
+  margin-top: 1rem;
+}
+.maps {
+  border: none;
+}
+.opening-hour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+}
+.opening-hour img {
+  margin-bottom: 4rem;
+}
+.open-hours {
+  font-family: "Abril Fatface", cursive;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+.timings {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.happy {
+  font-family: "Abril Fatface", cursive;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+.enjoy {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.thursday {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 40em) {
+  .form-map {
+    grid-template-columns: 1fr;
+  }
+  .call-book {
+    grid-template-columns: 1fr;
+  }
+}

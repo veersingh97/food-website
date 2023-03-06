@@ -8,10 +8,11 @@
     content: "";
     background-image: url('../../Assests/back.jpg');
     background-size: cover;
-    filter: brightness(0.5); 
+    filter: brightness(0.3); 
     position: absolute;
     top: 0px;
     right: 0px;
+    background-attachment: fixed;
     bottom: 0px;
     left: 0px;
     z-index: -10;
@@ -21,6 +22,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap:3rem;
 }
 .happy-content h2{
     font-size: 2rem;
@@ -29,6 +31,7 @@
 .happy-content h1{
     font-size: 5rem;
     color: #DB9423;
+    letter-spacing: 2px;
     font-family: 'Abril Fatface', cursive;
 }
 .happy-content h4{

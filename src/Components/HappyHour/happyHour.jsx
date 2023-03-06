@@ -12,7 +12,7 @@ const happyHour = () => {
             <h2>Enjoy 50% Off on All Foods</h2>
             <h1>Happy Hours</h1>
             <h4>Every Thursday, 4PM – 7PM</h4>
-            <Link to="/contact"><button className='btn happy-btn'>Reserve A Table</button></Link>
+            <Link to="/reserve"><button className='btn happy-btn'>Reserve A Table</button></Link>
         </div>
     </section>
     </div>

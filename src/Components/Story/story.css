@@ -9,9 +9,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 3rem;
+}
+.bbq-icon{
+    height: 6rem;
+    width: 6rem;
 }
 .reastaurant-name{
     font-size: 3rem;
+    color: #DB9423;
 }
 .story-content p{
     font-size: 1.4rem;

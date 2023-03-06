@@ -1,0 +1,183 @@
+.reserve-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  padding: 4rem;
+}
+.reserve-hero {
+  position: relative;
+}
+.reserve-hero::before {
+  content: "";
+  background-image: url("../../Assests/reserve-back.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3);
+  position: absolute;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -10;
+}
+.reserve-hero h1 {
+  font-size: 7rem;
+  letter-spacing: 2px;
+  font-family: "Abril Fatface", cursive;
+  color: #ffffff;
+}
+
+.reserve-hero p {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin: 3rem;
+  color: white;
+}
+.reserve-hero h2 {
+  color: #db9423;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: "Abril Fatface", cursive;
+}
+.scroll{
+    font-size: 2.3rem;
+    color: #db9423;
+    letter-spacing: 2px;
+  font-family: "Abril Fatface", cursive;
+}
+.how-section {
+  margin-top: 5.6rem;
+  padding: 5rem;
+}
+.how-text {
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.how-content h3 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-family: "Abril Fatface", cursive;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.first {
+  font-size: 10rem;
+  color: #db9423;
+  opacity: 0.8;
+}
+.how-grid h3 {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+.how-summary {
+  font-size: 1.8rem;
+  color: #555;
+}
+.img {
+  width: 100%;
+}
+.grid-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-none {
+  display: none;
+}
+
+@media (max-width: 75em) {
+  .how-grid {
+    gap: 5.6rem;
+    align-items: center;
+  }
+  .how-section {
+    padding: 4rem;
+  }
+  .desktop-none {
+    display: none;
+  }
+}
+
+@media (max-width: 61em) {
+  .how-section {
+    margin-top: 3.6rem;
+    padding: 4rem;
+  }
+  .how-text {
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+  }
+  .how-content h3 {
+    font-size: 2.6rem;
+  }
+  .how-grid {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .how-summary {
+    font-size: 1.6rem;
+  }
+  .first {
+    font-size: 8rem;
+  }
+  .desktop-none {
+    display: none;
+  }
+}
+
+.reserve-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:3rem;
+    margin: 5rem;
+}
+.reserve-form label, .reserve-form input, .reserve-form option{
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: .5rem 1rem;
+}
+select{
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: .5rem 1rem;
+}
+@media (max-width: 35em) {
+  .how-section {
+    margin-top: 3rem;
+    padding: 4rem;
+  }
+  .how-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+  .mobile-none {
+    display: none;
+  }
+  .first {
+    font-size: 6rem;
+  }
+  .desktop-none {
+    display: inline-block;
+    text-align: center;
+  }
+}

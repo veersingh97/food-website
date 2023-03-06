@@ -9,7 +9,7 @@ const story = () => {
   return (
     <div className="story-section">
       <div className="story-content">
-        <GiBarbecue />
+        <GiBarbecue  className="bbq-icon"/>
         <h1 className="reastaurant-name">Reastaurant Name</h1>
         <img src={DivImg} alt="divider"></img>
         <p>Our Delicious Story</p>
@@ -22,7 +22,7 @@ const story = () => {
           vitae erat consequat. Luctus nec ullamcorper mattis, pulvinar dapibus
           leo adipiscing elit elit tellus.
         </p>
-        <Link to="/contact"><button className="btn btn-hero margin">Reservation</button></Link>
+        <Link to="/reserve"><button className="btn btn-hero margin">Reservation</button></Link>
       </div>
       <div>
         <img src={Side} className="img" alt="fruit-salad"></img>

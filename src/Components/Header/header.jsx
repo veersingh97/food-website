@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Line } from "react-icons/ri";
 import { CgCloseO } from "react-icons/cg";
-
 import "./header.css";
 
 const Header = () => {
@@ -38,7 +37,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="navbar-label btn" onClick={() => setIsToggle(true)}>
+            <Link to="/reserve" className="navbar-label btn" onClick={() => setIsToggle(true)}>
               Reservation
             </Link>
           </li>

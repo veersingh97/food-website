@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 import { FiInstagram, FiFacebook, FiTwitter } from "react-icons/fi";
 
 const footer = () => {
@@ -37,7 +38,9 @@ const footer = () => {
           <h4 className="footer-head ">Opening Hours</h4>
           <p>Sunday to Wednesday 9AM - 10.30PM</p>
           <p>Thursday, Friday, Saturday 9AM - 12.30AM</p>
-          <button className="btn">Reserve</button>
+          <Link to="/reserve">
+            <button className="btn">Reserve</button>
+          </Link>
         </div>
       </div>
     </section>

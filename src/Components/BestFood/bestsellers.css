@@ -12,6 +12,7 @@
     margin-bottom: 5rem;
     font-family: 'Abril Fatface', cursive;
     font-size: 4rem;
+    letter-spacing: 2px;
     text-align: center;
 }
 .best-content {
@@ -25,32 +26,38 @@
     transform: translateY(-10px);
 }
 .meal-img {
-  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  background-size: cover;
+  border-radius: 10px;
 }
 .meal-name{
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .green{
     color: green;
     font-size: 1.4rem;
     font-weight: 700;
+    margin-bottom: 2rem;
 }
 .red{
     color: red;
     font-size: 1.4rem;
     font-weight: 700;
-}
-.price{
-    color: #DB9423;
+    margin-bottom: 2rem;
 }
 .info{
-    font-size: 1.4rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
 }
 
 .price{
+  color: #DB9423;
     font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 2rem;
 }
 .see-all {
     font-size: 1.4rem;
@@ -58,7 +65,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
-    margin-top: 2rem;
+    margin-top: 5rem;
     font-weight: 700;
   }
   .see-all span{

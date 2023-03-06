@@ -18,10 +18,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap:3rem;
 }
 .testi-content h1{
     font-family:  'Abril Fatface', cursive;
     font-size: 4rem;
+    letter-spacing: 2px;
 }
 .testi-content p{
     text-align: center;
@@ -39,6 +41,7 @@
     align-items: center;
     flex-direction: column;
     padding: 2rem;
+    gap:2rem;
     border-radius: 10px;
     box-shadow: 2px 2px 10px 2px rgb(215, 215, 215);
 }

@@ -1,11 +1,11 @@
 .featured-section{
-    padding: 5rem;
+    padding: 10rem 5rem 5rem;
 }
 .featured-section h3 {
     margin: 3rem auto 2rem auto;
     text-align: center;
-    color: #333;
-    opacity: 0.5;
+    color: #DB9423;
+    opacity: 0.9;
     font-weight: 700;
     font-size: 1.4rem;
   }
@@ -14,10 +14,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 6rem;
+    /* width: 4rem; */
   }
   .featured-logo {
-    max-width: 12rem;
+    max-width: 15rem;
     opacity: 0.5;
     filter: grayscale(100%);
   }
